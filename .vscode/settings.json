@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/linux",
+    "emulator.emulatorPath": "C:\\\\Users\\\\falldev\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\emulator",
+    "emulator.emulatorPathWindows": "C:\\\\Users\\\\falldev\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\emulator",
+    "emulator.emulatorPathMac": "C:\\\\Users\\\\falldev\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\emulator",
+    "emulator.simulatorPath": "C:\\\\Users\\\\falldev\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\emulator",
+    "emulator.emulatorPathLinux": "C:\\\\Users\\\\falldev\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\emulator"
+}

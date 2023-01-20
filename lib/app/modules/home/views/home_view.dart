@@ -10,28 +10,31 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(
       builder: (controller) => Scaffold(
+        backgroundColor: const Color(0xfff8fafc),
         appBar: AppBar(
-          title: const Text('HomeView'),
-          centerTitle: true,
+          backgroundColor: Colors.white,
+          title: Text('Sirenang', style: Theme.of(context).textTheme.headline5),
+          centerTitle: false,
         ),
         body: SafeArea(
-            child: IndexedStack(
-          index: controller.tabIndexBottomNavigationBar,
-          children: const [
-            Center(child: Text('EXPLORE 1')),
-            Center(child: Text('SAVED 2')),
-            Center(child: Text('SWIM 3')),
-            Center(child: Text('INBOX 4')),
-            Center(child: Text('PROFILE 5')),
-          ],
-        )),
+          child: IndexedStack(
+            index: controller.tabIndexBottomNavigationBar,
+            children: const [
+              Center(child: Text('EXPLORE 1')),
+              Center(child: Text('SAVED 2')),
+              Center(child: Text('SWIM 3')),
+              Center(child: Text('INBOX 4')),
+              Center(child: Text('PROFILE 5')),
+            ],
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           unselectedItemColor: Colors.black,
           selectedItemColor: Colors.red,
           onTap: controller.changeTabIndex,
           currentIndex: controller.tabIndexBottomNavigationBar,
-          // showSelectedLabels: false,
-          // showUnselectedLabels: false,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
           type: BottomNavigationBarType.fixed,
           items: [
             _bottomNavigationBarItems(
