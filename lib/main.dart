@@ -7,7 +7,7 @@ import 'app/routes/app_pages.dart';
 void main() {
   runApp(
     GetMaterialApp(
-      theme: ThemeData(textTheme: const TextTheme()),
+      theme: ThemeData(fontFamily: 'Poppins'),
       title: "Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
