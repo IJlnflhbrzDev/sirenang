@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sirenang/app/modules/home/views/slide_img.dart';
 import 'package:sirenang/app/modules/home/views/sport_category.dart';
-import 'package:sirenang/app/modules/home/views/swimming_card_product.dart';
+import 'package:sirenang/app/modules/home/views/swimming_card_product_landscape.dart';
 
 import '../controllers/home_controller.dart';
 
