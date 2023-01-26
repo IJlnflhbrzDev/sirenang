@@ -1,9 +1,9 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sirenang/app/modules/home/views/slide_img.dart';
 import 'package:sirenang/app/modules/home/views/sport_category.dart';
+import 'package:sirenang/app/modules/home/views/swimming_card_product.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -54,21 +54,10 @@ class HomeView extends GetView<HomeController> {
               SizedBox(
                 height: Get.height,
                 child: ListView(
-                  children: [
-                    const SlideBannerSirenang(),
-                    const SportCategory(),
-                    Card(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const <Widget>[
-                          ListTile(
-                            leading: Icon(Icons.album, size: 45),
-                            title: Text('Sonu Nigam'),
-                            subtitle: Text('Best of Sonu Nigam Song'),
-                          ),
-                        ],
-                      ),
-                    )
+                  children: const [
+                    SlideBannerSirenang(),
+                    SportCategory(),
+                    SwimmingCardProduct(),
                   ],
                 ),
               ),
