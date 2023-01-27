@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:sirenang/app/modules/home/views/slide_img.dart';
 import 'package:sirenang/app/modules/home/views/sport_category.dart';
 import 'package:sirenang/app/modules/home/views/swimming_card_product_landscape.dart';
+import 'package:sirenang/app/modules/home/views/swimming_card_product_potraid.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -54,10 +55,15 @@ class HomeView extends GetView<HomeController> {
               SizedBox(
                 height: Get.height,
                 child: ListView(
+                  physics: const AlwaysScrollableScrollPhysics(),
                   children: const [
                     SlideBannerSirenang(),
                     SportCategory(),
+                    SizedBox(height: 10),
                     SwimmingCardProduct(),
+                    SizedBox(height: 10),
+                    SwimmingCardProductPotraid(),
+                    SizedBox(height: 10),
                   ],
                 ),
               ),

@@ -10,23 +10,15 @@ class SportCategory extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 10, left: 10),
-            child: Text(
-              'Sport Category',
-              style: Theme.of(context)
-                  .textTheme
-                  .subtitle1
-                  ?.copyWith(fontWeight: FontWeight.w600),
-            ),
-          ),
-          const SizedBox(
-            height: 10,
+          const Padding(
+            padding: EdgeInsets.only(top: 10, left: 10),
+            child: Text('Sport Category',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
-              height: 300,
+              height: 280,
               child: GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

@@ -7,17 +7,19 @@ class SwimmingCardProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
       color: Colors.white,
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          const SizedBox(height: 10),
           const Text('Swimming Pools in the area',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
-          const SizedBox(height: 20),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
+          const SizedBox(height: 10),
           SizedBox(
-            height: Get.height,
+            height: 430,
             child: GridView.builder(
+                itemCount: 4,
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -28,7 +30,6 @@ class SwimmingCardProduct extends StatelessWidget {
                   // tinggii dari element card
                   childAspectRatio: .9,
                 ),
-                itemCount: 4,
                 itemBuilder: (context, index) {
                   return Container(
                     padding: const EdgeInsets.all(5),
